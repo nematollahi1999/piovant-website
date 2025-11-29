@@ -1,0 +1,249 @@
+<template>
+    <div class="min-h-screen w-full bg-white font-sans text-slate-900 selection:bg-blue-200 selection:text-blue-900">
+        <main class="flex min-h-screen flex-col lg:flex-row">
+            <!-- LEFT COLUMN: Immersive Visual -->
+            <div class="relative h-[50vh] w-full overflow-hidden lg:fixed lg:top-0 lg:left-0 lg:h-screen lg:w-5/12">
+                <!-- Profile Image -->
+                <img class="h-full w-full object-cover transition-transform duration-[3s] hover:scale-105" :src="user.imageUrl" :alt="user.name" />
+
+                <!-- Gradient Overlay -->
+                <div
+                    class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent lg:bg-gradient-to-r lg:from-transparent lg:to-black/30"
+                ></div>
+
+                <!-- Status Indicator -->
+                <div
+                    class="absolute bottom-6 left-6 flex items-center gap-2 rounded-full bg-white/90 px-4 py-2 text-sm font-semibold text-slate-900 shadow-lg backdrop-blur-md lg:bottom-12 lg:left-12"
+                >
+                    <span class="relative flex h-3 w-3">
+                        <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-blue-400 opacity-75"></span>
+                        <span class="relative inline-flex h-3 w-3 rounded-full bg-blue-600"></span>
+                    </span>
+                    <Link href="/" target="_blank" class="hover:underline">Visit Piovant Official</Link>
+                </div>
+            </div>
+
+            <!-- RIGHT COLUMN: Content Scroll -->
+            <div class="flex w-full flex-col px-6 py-16 lg:ml-[41.666667%] lg:w-7/12 lg:px-24 lg:py-24">
+                <!-- 1. HEADER: Identity -->
+                <div class="fade-in-up">
+                    <p class="mb-6 text-xs font-bold tracking-[0.2em] text-blue-600 uppercase">
+                        {{ user.role }}
+                    </p>
+                    <h1 class="text-5xl font-extrabold tracking-tight text-slate-900 sm:text-7xl lg:text-8xl">
+                        {{ user.name.split(' ')[0] }}<br />
+                        <span class="text-slate-300">{{ user.name.split(' ')[1] }}</span>
+                    </h1>
+
+                    <h2 class="mt-6 font-serif text-xl text-slate-500 italic">"{{ user.tagline }}"</h2>
+                    <h3 class="mt-8 text-sm font-bold tracking-widest text-slate-400 uppercase">Bio</h3>
+                    <p class="mt-2 max-w-xl text-lg leading-relaxed text-slate-700">
+                        {{ user.bio }}
+                    </p>
+                </div>
+
+                <!-- 2. HIGHLIGHTS: Editorial Grid -->
+                <div class="mt-16 border-t border-slate-100 pt-12">
+                    <h3 class="mb-8 text-sm font-bold tracking-widest text-slate-400 uppercase">Highlights & Milestones</h3>
+                    <p class="mb-8 text-lg font-medium text-slate-900 italic">
+                        "From spark to scale — forging milestones that combine accuracy, creativity, and forward-thinking leadership."
+                    </p>
+
+                    <div class="grid gap-8 sm:grid-cols-2">
+                        <div v-for="(item, index) in user.highlights" :key="index" class="relative pl-6">
+                            <!-- Artistic decorative line -->
+                            <div class="absolute top-1 left-0 h-full w-0.5 bg-gradient-to-b from-blue-500 to-transparent"></div>
+                            <h4 class="text-base font-bold text-slate-900">{{ item.title }}</h4>
+                            <p class="mt-2 text-sm leading-relaxed text-slate-600">{{ item.desc }}</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. VALUE ADD: Text Links -->
+                <div class="mt-16 flex flex-col gap-6 sm:flex-row sm:items-center sm:gap-12">
+                    <div class="group flex items-center gap-3 text-slate-600 transition-colors hover:text-blue-600">
+                        <div class="flex items-center justify-center rounded-full transition-colors">
+                            <StarIcon class="h-5 w-5" />
+                        </div>
+                        <div class="flex flex-col gap-3">
+                            <span class="text-xs font-bold tracking-wider text-slate-400 uppercase">Value Add</span>
+                            <span class="font-medium"
+                                >Offering clarity where decisions matter most, cultivating trust in every collaboration, and guiding meaningful
+                                progress with quiet consistency.</span
+                            >
+                        </div>
+                    </div>
+
+                    <!-- <div class="group flex items-center gap-3 text-slate-600 transition-colors hover:text-blue-600">
+                        <div class="flex h-10 w-10 items-center justify-center rounded-full bg-slate-100 transition-colors group-hover:bg-blue-50">
+                            <MicrophoneIcon class="h-5 w-5" />
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="text-xs font-bold tracking-wider text-slate-400 uppercase">Insights</span>
+                            <span class="font-medium">Talks & Thought Leadership</span>
+                        </div>
+                    </div> -->
+                </div>
+
+                <!-- 4. CTAs: Action Grid -->
+                <div class="mt-16 grid gap-4 sm:grid-cols-2">
+                    <!-- Email -->
+                    <a
+                        :href="`mailto:${user.email}`"
+                        class="group relative flex flex-col justify-between overflow-hidden rounded-3xl border border-slate-100 bg-white p-8 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
+                    >
+                        <div
+                            class="absolute -top-4 -right-4 h-24 w-24 rounded-full bg-blue-50 transition-transform duration-500 group-hover:scale-150"
+                        ></div>
+                        <EnvelopeIcon class="relative h-8 w-8 text-slate-900 transition-colors group-hover:text-blue-600" />
+                        <div class="relative mt-8">
+                            <span class="block text-xs font-bold tracking-wider text-slate-400 uppercase">Email Me</span>
+                            <span class="mt-1 block text-lg font-medium break-words text-slate-900">{{ user.email }}</span>
+                        </div>
+                        <ArrowRightIcon
+                            class="absolute right-8 bottom-8 h-6 w-6 text-blue-600 opacity-0 transition-all duration-300 group-hover:translate-x-2 group-hover:opacity-100"
+                        />
+                    </a>
+
+                    <!-- Booking / Call -->
+                    <a
+                        :href="user.bookingLink"
+                        class="group relative flex flex-col justify-between overflow-hidden rounded-3xl border border-slate-100 bg-white p-8 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
+                    >
+                        <div
+                            class="absolute -top-4 -right-4 h-24 w-24 rounded-full bg-emerald-50 transition-transform duration-500 group-hover:scale-150"
+                        ></div>
+                        <CalendarDaysIcon class="relative h-8 w-8 text-slate-900 transition-colors group-hover:text-emerald-600" />
+                        <div class="relative mt-8">
+                            <span class="block text-xs font-bold tracking-wider text-slate-400 uppercase">Collaboration</span>
+                            <span class="mt-1 block text-lg font-medium text-slate-900">Schedule a Call</span>
+                        </div>
+                        <ArrowRightIcon
+                            class="absolute right-8 bottom-8 h-6 w-6 text-emerald-600 opacity-0 transition-all duration-300 group-hover:translate-x-2 group-hover:opacity-100"
+                        />
+                    </a>
+
+                    <!-- Website (Full Width) -->
+                    <a
+                        :href="`https://${user.website}`"
+                        target="_blank"
+                        class="group relative flex flex-col justify-between overflow-hidden rounded-3xl border border-slate-100 bg-white p-8 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl sm:col-span-2"
+                    >
+                        <div
+                            class="absolute top-0 right-0 h-full w-1/3 bg-gradient-to-l from-slate-50 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+                        ></div>
+                        <div class="relative flex items-center justify-between">
+                            <div class="flex items-center gap-4">
+                                <div
+                                    class="flex h-12 w-12 items-center justify-center rounded-full bg-slate-50 transition-colors group-hover:bg-slate-200"
+                                >
+                                    <GlobeAltIcon class="h-8 w-8 text-slate-900" />
+                                </div>
+                                <div>
+                                    <span class="block text-xs font-bold tracking-wider text-slate-400 uppercase">Official Website</span>
+                                    <span class="mt-1 block text-xl font-medium text-slate-900">{{ user.website }}</span>
+                                </div>
+                            </div>
+                            <ArrowUpRightIcon
+                                class="h-6 w-6 text-slate-300 transition-all duration-300 group-hover:translate-x-1 group-hover:-translate-y-1 group-hover:text-slate-900"
+                            />
+                        </div>
+                    </a>
+                </div>
+
+                <!-- 5. FOOTER: Socials & Copyright -->
+                <div class="mt-16 pt-8">
+                    <span class="block p-6 text-xs font-bold tracking-wider text-slate-400 uppercase">Social Media</span>
+                    <!-- Social Icons Loop -->
+                    <div class="mb-12 flex flex-wrap gap-3">
+                        <a
+                            v-for="social in user.socials"
+                            :key="social.name"
+                            :href="social.href"
+                            target="_blank"
+                            class="group flex items-center gap-3 rounded-full border border-slate-200 bg-white px-5 py-2.5 transition-all duration-300 hover:border-slate-900 hover:bg-slate-900"
+                        >
+                            <component :is="social.icon" class="h-4 w-4 text-slate-600 transition-colors group-hover:text-white" />
+                            <span class="text-sm font-medium text-slate-600 group-hover:text-white">{{ social.name }}</span>
+                        </a>
+                    </div>
+
+                    <div class="flex flex-col gap-4 border-t border-slate-200 pt-8 text-xs font-medium text-slate-400 sm:flex-row sm:justify-between">
+                        <p>© 2026 PIOVANT. All Rights Reserved.</p>
+                        <div class="flex gap-6 tracking-wider uppercase">
+                            <span>Toronto, Canada</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</template>
+
+<script setup>
+import { ArrowRightIcon, ArrowUpRightIcon, CalendarDaysIcon, EnvelopeIcon, GlobeAltIcon, StarIcon } from '@heroicons/vue/24/outline';
+import { Link } from '@inertiajs/vue3';
+import { h, ref } from 'vue';
+
+// --- Custom SVG Icons for Socials ---
+const createIcon = (pathData) => ({
+    render: () => h('svg', { xmlns: 'http://www.w3.org/2000/svg', viewBox: '0 0 24 24', fill: 'currentColor' }, [h('path', { d: pathData })]),
+});
+
+const IconLinkedin = createIcon(
+    'M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z',
+);
+
+const IconFacebook = createIcon(
+    'M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036c-2.148 0-2.791 1.657-2.791 3.593v.38h3.914c-.346 1.989-1.355 3.667-1.355 3.667h-2.559v7.98h-4.978z',
+);
+
+const IconInstagram = createIcon(
+    'M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.85s-.011 3.584-.069 4.85c-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07s-3.584-.012-4.85-.07c-3.252-.148-4.771-1.691-4.919-4.919-.058-1.265-.069-1.645-.069-4.85s.011-3.584.069-4.85c.149-3.225 1.664-4.771 4.919-4.919 1.266-.058 1.644-.07 4.85-.07zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948s.014 3.667.072 4.947c.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072s3.667-.014 4.947-.072c4.358-.2 6.78-2.618 6.98-6.98.059-1.281.073-1.689.073-4.948s-.014-3.667-.072-4.947c-.2-4.358-2.618-6.78-6.98-6.98-1.281-.058-1.689-.072-4.948-.072zM12 6.848c-2.839 0-5.152 2.313-5.152 5.152s2.313 5.152 5.152 5.152 5.152-2.313 5.152-5.152-2.313-5.152-5.152-5.152zm0 8.302c-1.742 0-3.152-1.41-3.152-3.152s1.41-3.152 3.152-3.152 3.152 1.41 3.152 3.152-1.41 3.152-3.152 3.152zm6.362-7.009c-.752 0-1.362.61-1.362 1.362s.61 1.362 1.362 1.362 1.362-.61 1.362-1.362-.61-1.362-1.362-1.362z',
+);
+
+const IconX = createIcon(
+    'M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z',
+);
+
+// --- User Data ---
+const user = ref({
+    name: 'Atabak Shahabadi',
+    role: 'Founder & CEO | Empowering Bold Minds at PioVant',
+    tagline: 'Inspire Brilliance. Unite Vision. Deliver Impact',
+    imageUrl: '/images/Atabak.jpg',
+    email: 'atabak@piovant.com',
+    website: 'www.piovant.com',
+    bookingLink: '#',
+    bio: 'Turning daring ideas into tangible outcomes — uplifting visionary thinkers, pioneering new frontiers, and crafting timeless impact.',
+    highlights: [
+        { title: 'Vision Ignited Early', desc: 'Exploring global vistas since age 15.' },
+        { title: 'Building Trust', desc: 'Designing secure, resilient, and intelligent systems.' },
+        { title: 'From Concept to Execution', desc: 'Creating technologies that deliver tangible change.' },
+        { title: 'Global Resonance', desc: 'Amplifying ideas with resonance across cultures.' },
+    ],
+    socials: [
+        { name: 'LinkedIn', href: 'https://linkedin.com/in/atabakshahabadi', icon: IconLinkedin },
+        { name: 'Facebook', href: '#', icon: IconFacebook },
+        { name: 'Instagram', href: '#', icon: IconInstagram },
+        { name: 'X.com', href: '#', icon: IconX },
+    ],
+});
+</script>
+
+<style scoped>
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-up {
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+</style>
