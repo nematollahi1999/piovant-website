@@ -65,7 +65,7 @@ const faqData = ref([
             },
             {
                 question: 'What makes AERIS™ extraordinary, and how do its components work together?',
-                answer: 'AERIS™ extends protection beyond the vehicle through a fully synchronized ecosystem: <br/>• AeroVault™ Drone — Autonomous flight, AI-guided tracking, and live visual monitoring.  TerraDock™ Station — Launches, recharges, and sustains AeroVault™ using grid-powered backup. The central unit, TrackVault™ (GPS Tracker), coordinates mission signals. AeroVault™ executes surveillance and defensive actions, then returns to TerraDock™. AeroVault™ cannot operate independently; it requires encrypted coordination with TrackVault™.',
+                answer: 'AERIS™ extends protection beyond the vehicle through a fully synchronized ecosystem: AeroVault™ Drone — Autonomous flight, AI-guided tracking, and live visual monitoring.  TerraDock™ Station — Launches, recharges, and sustains AeroVault™ using grid-powered backup. The central unit, TrackVault™ (GPS Tracker), coordinates mission signals. AeroVault™ executes surveillance and defensive actions, then returns to TerraDock™. AeroVault™ cannot operate independently; it requires encrypted coordination with TrackVault™.',
             },
             {
                 question: 'What happens when a threat is detected?',

@@ -16,7 +16,7 @@
                 <button
                     class="w-full cursor-pointer rounded-full border-2 border-[#2247FF] bg-none px-8 py-3 text-center text-xs font-semibold text-[#2247FF] backdrop-blur-sm transition-all duration-100 ease-in-out hover:border-blue-700 hover:bg-blue-700 hover:text-white sm:w-auto md:text-sm"
                 >
-                    Join the Waitlist
+                    Join the PRIME Waitlist
                 </button>
             </div>
         </div>

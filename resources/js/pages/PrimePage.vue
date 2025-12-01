@@ -13,7 +13,7 @@
         <SteerVaultSection />
 
         <!-- 6. Voice assistance narrow banner -->
-        <VoiceAssistantBanner />
+        <!-- <VoiceAssistantBanner /> -->
 
         <!-- 7. TrackVault section -->
         <TrackVaultSection />
@@ -46,7 +46,6 @@ import PrimeNetwork from '@/components/prime/PrimeNetwork.vue';
 import PrimeSyncBanner from '@/components/prime/PrimeSyncBanner.vue';
 import SteerVaultSection from '@/components/prime/SteerVaultSection.vue';
 import TrackVaultSection from '@/components/prime/TrackVaultSection.vue';
-import VoiceAssistantBanner from '@/components/prime/VoiceAssistantBanner.vue';
 import WaitlistCTA from '@/components/prime/WaitlistCTA.vue';
 import WhyPrimeSection from '@/components/prime/WhyPrimeSection.vue';
 import AppLayout from '@/layouts/AppLayout.vue';

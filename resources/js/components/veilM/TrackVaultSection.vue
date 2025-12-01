@@ -11,11 +11,11 @@
             <div class="grid grid-cols-1 items-start gap-12 lg:grid-cols-2">
                 <div class="flex w-full flex-col items-start sm:col-span-1">
                     <img src="/images/trackvault-module.jpg" alt="TrackVault Module" class="h-full w-full object-cover" />
-                    <p class="mt-8 max-w-md text-start text-lg text-gray-700">
-                        A predictive guardian that perceives movement, evaluates behavior, and triggers protection before threats escalate.
-                    </p>
                 </div>
                 <div class="sm:col-span-1">
+                    <p class="mb-4 max-w-md text-start text-lg text-gray-700">
+                        A predictive guardian that perceives movement, evaluates behavior, and triggers protection before threats escalate.
+                    </p>
                     <h3 class="mb-4 text-2xl font-bold text-blue-600">Core Capabilities</h3>
                     <div class="">
                         <AccordionItem

@@ -15,7 +15,7 @@
                     <h2 class="text-sm font-medium text-gray-800 md:text-lg">Forge a Transcendent Tomorrow</h2>
                     <h2 class="text-sm font-medium text-gray-900 md:text-lg">
                         <span class="bg-gradient-to-r from-[#F87479] to-[#2546FF] bg-clip-text font-bold text-transparent">
-                            Revolutionizing Vehicle Security Systems, Beyond Imagination
+                            Revolutionizing Vehicle Security Systems
                         </span>
                     </h2>
                     <div class="items-center justify-center space-x-2 pt-4">

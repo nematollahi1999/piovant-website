@@ -7,7 +7,7 @@
                     <p class="mt-4 text-gray-300">
                         Have questions? PRIME has answers.Deep intelligence, made beautifully simple..
                         <br />
-                        Need more clarity? <a href="#" class="text-blue-400 hover:underline">Talk to an Expert</a>
+                        Need more clarity? <br /><a href="#" class="text-blue-400 hover:underline">Talk to an Expert</a>
                     </p>
                 </div>
                 <div class="space-y-8 sm:px-8">
@@ -83,7 +83,7 @@ const faqData = ref([
             },
             {
                 question: 'How long does each module stay powered?',
-                answer: 'SteerVault™ — Self-powered (≈ 5 days standby) TrackVault™ & AlarmVault™ — Vehicle-powered (24/7) + backup battery (24 h & 2 h active when disconnected) Smart alerts notify you before power depletion.',
+                answer: 'SteerVault™ — Self-powered (≈ 5 days standby). TrackVault™ & AlarmVault™ — Vehicle-powered (24/7) + backup battery (24 h & 2 h active when disconnected). Smart alerts notify you before power depletion.',
             },
         ],
     },

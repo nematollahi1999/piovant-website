@@ -3,7 +3,7 @@
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <!-- Section Header -->
             <div class="mx-auto max-w-2xl text-center">
-                <h2 class="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">Lets Connect, Beyond the Ordinary</h2>
+                <h2 class="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">Let's Connect, Beyond the Ordinary</h2>
                 <p
                     class="mt-2 bg-gradient-to-r from-[#F87479] to-[#2546FF] bg-clip-text px-4 text-sm leading-8 font-bold font-semibold text-transparent sm:px-0 sm:text-base"
                 >

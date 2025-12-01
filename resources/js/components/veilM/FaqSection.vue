@@ -5,10 +5,10 @@
                 <div class="mb-12 text-start">
                     <h2 class="text-2xl font-bold tracking-tight md:text-4xl">FortiVault™ VEIL FAQs</h2>
                     <p class="mt-4 text-gray-300">
-                        Curious? VEIL illuminates. Stealthy. Accurate. Ahead of every threat.
+                        Curious? VEIL illuminates. Stealthy. Accurate. Inviolable.
 
                         <br />
-                        Need private guidance? <a href="#" class="text-blue-400 hover:underline">Consult an expert</a>
+                        Need private guidance? <br /><a href="#" class="text-blue-400 hover:underline">Consult an expert</a>
                     </p>
                 </div>
                 <div class="space-y-8 sm:px-8">
@@ -97,7 +97,7 @@ const faqData = ref([
             },
             {
                 question: 'How long does each module stay powered?',
-                answer: 'PedalVault™: Self-powered, up to 7 days standby. TrackVault™ & AlarmVault™: Vehicle-powered (24/7), backup batteries (24h & 2h) Smart alerts always warn you before power runs low.',
+                answer: 'PedalVault™: Self-powered, up to 7 days standby. TrackVault™ & AlarmVault™: Vehicle-powered (24/7), backup batteries (24h & 2h). Smart alerts always warn you before power runs low.',
             },
         ],
     },

@@ -58,6 +58,6 @@ const features = ref([
     { title: 'Owner-Exclusive Override', content: 'Deactivates solely through biometric or verified app command. ' },
     { title: 'High-Decibel Deterrence ', content: 'Generates disorienting frequencies to neutralize intruders.' },
     { title: 'Anti-Jamming Armor ', content: 'Frequency-hopping technology thwarts interference and tampering. ' },
-    { title: 'MeshLink Sync™ ', content: 'Coordinates wirelessly with SteerVault™ and TrackVault™.' },
+    { title: 'MeshLink Sync™ ', content: 'Coordinates wirelessly with SteerVault™, PedalVault™ and TrackVault™.' },
 ]);
 </script>

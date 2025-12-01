@@ -11,10 +11,10 @@
         <CareSection />
         <EngineeredForLifeSection />
         <FinalCtaSection />
-        <NewsLetter />
         <div id="faq">
             <FaqSection />
         </div>
+        <NewsLetter />
     </div>
 </template>
 

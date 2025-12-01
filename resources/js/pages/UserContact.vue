@@ -46,7 +46,8 @@
                 <div class="mt-16 border-t border-slate-100 pt-12">
                     <h3 class="mb-8 text-sm font-bold tracking-widest text-slate-400 uppercase">Highlights & Milestones</h3>
                     <p class="mb-8 text-lg font-medium text-slate-900 italic">
-                        "From spark to scale — forging milestones that combine accuracy, creativity, and forward-thinking leadership."
+                        "From spark to scale - setting benchmarks with accuracy, creativity and forward-thinking leadership that elevates enduring
+                        standards."
                     </p>
 
                     <div class="grid gap-8 sm:grid-cols-2">
@@ -68,8 +69,8 @@
                         <div class="flex flex-col gap-3">
                             <span class="text-xs font-bold tracking-wider text-slate-400 uppercase">Value Add</span>
                             <span class="font-medium"
-                                >Offering clarity where decisions matter most, cultivating trust in every collaboration, and guiding meaningful
-                                progress with quiet consistency.</span
+                                >Providing clarity where decisions defines outcomes, fostering trust in every collaboration and guiding meaningful
+                                progress with steady purpose and understand authority.</span
                             >
                         </div>
                     </div>
@@ -210,12 +211,12 @@ const IconX = createIcon(
 const user = ref({
     name: 'Atabak Shahabadi',
     role: 'Founder & CEO | Empowering Bold Minds at PioVant',
-    tagline: 'Inspire Brilliance. Unite Vision. Deliver Impact',
+    tagline: 'Inspire Brilliance. Harmonize Vision. Forge the Future with Precision.',
     imageUrl: '/images/Atabak.jpg',
     email: 'atabak@piovant.com',
     website: 'www.piovant.com',
     bookingLink: '#',
-    bio: 'Turning daring ideas into tangible outcomes — uplifting visionary thinkers, pioneering new frontiers, and crafting timeless impact.',
+    bio: 'I navigate challenges with calm discernment, steadfast integrity and a human-centered vision, translating them into purposeful action that leaves a lasting impact and elevates enduring values.',
     highlights: [
         { title: 'Vision Ignited Early', desc: 'Exploring global vistas since age 15.' },
         { title: 'Building Trust', desc: 'Designing secure, resilient, and intelligent systems.' },

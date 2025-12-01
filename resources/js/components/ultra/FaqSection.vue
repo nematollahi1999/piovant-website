@@ -72,7 +72,7 @@ const faqData = ref([
             },
             {
                 question: 'How long do modules stay powered?',
-                answer: 'SteerVault™ — Self-powered (≈ 5 days standby) PedalVault™ — Self-powered (≈ 7 days standby) TrackVault™ & AlarmVault™ — Vehicle-powered (24/7) + backup battery (24 h & 2 h armed when disconnected) Smart alerts notify you before any power loss.',
+                answer: 'SteerVault™ — Self-powered (≈ 5 days standby). PedalVault™ — Self-powered (≈ 7 days standby). TrackVault™ & AlarmVault™ — Vehicle-powered (24/7) + backup battery (24 h & 2 h armed when disconnected). Smart alerts notify you before any power loss.',
             },
         ],
     },

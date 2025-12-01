@@ -7,7 +7,7 @@
                 </div>
                 <div>
                     <h2 class="mb-1 text-xl font-bold md:text-3xl">Why VEIL?</h2>
-                    <p class="mb-8 text-sm font-semibold text-blue-600 sm:text-base">Because What You Can’t See. you can’t breach.</p>
+                    <p class="mb-8 text-sm font-semibold text-blue-600 sm:text-base">Because What You Can’t See - you can’t breach.</p>
                     <div class="p-0 sm:pr-8">
                         <AccordionItem
                             v-for="(feature, index) in features"

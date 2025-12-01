@@ -9,13 +9,13 @@
                 <div class="relative overflow-hidden">
                     <img src="/images/product-prime.jpg" alt="FortiVault PRIME" class="block h-auto w-full" />
                     <div
-                        class="absolute inset-0 flex flex-col items-center justify-center gap-2 bg-black/30 p-4 text-center transition duration-300 ease-in-out hover:bg-black/0 sm:justify-start sm:bg-black/10 sm:p-12"
+                        class="absolute inset-0 flex flex-col items-center justify-start gap-2 bg-black/10 p-4 text-center transition duration-300 ease-in-out hover:bg-black/0 sm:justify-start sm:bg-black/10 sm:p-12"
                     >
                         <h3 class="bg-gradient-to-r from-[#F87479] to-[#2546FF] bg-clip-text text-xs font-bold text-transparent sm:text-base">
                             Smart Shield
                         </h3>
                         <h3 class="text-lg font-bold text-white sm:text-3xl sm:text-black">FortiVault PRIME</h3>
-                        <p class="text-sm text-slate-100 sm:text-base sm:text-slate-800">Vigilant in action, Proactive in protection.</p>
+                        <p class="text-sm text-slate-100 sm:text-base sm:text-slate-800">Vigilant in action. Proactive in protection.</p>
                         <Link
                             href="/prime"
                             class="rounded-full border-2 border-white bg-none px-4 py-2 text-center text-xs font-semibold text-white transition-all duration-100 ease-in-out hover:border-blue-700 hover:bg-blue-700 hover:text-white sm:w-auto sm:border-[#2247FF] sm:px-8 sm:py-3 sm:text-[#2247FF] md:text-sm"
@@ -28,13 +28,13 @@
                 <div class="relative overflow-hidden">
                     <img src="/images/product-veil.jpg" alt="FortiVault VEIL" class="block h-auto w-full" />
                     <div
-                        class="absolute inset-0 flex flex-col items-center justify-center gap-2 bg-black/30 p-4 text-center transition duration-300 ease-in-out hover:bg-black/0 sm:justify-start sm:bg-black/10 sm:p-12"
+                        class="absolute inset-0 flex flex-col items-center justify-start gap-2 bg-black/10 p-4 text-center transition duration-300 ease-in-out hover:bg-black/0 sm:justify-start sm:bg-black/10 sm:p-12"
                     >
                         <h3 class="bg-gradient-to-r from-[#F87479] to-[#2546FF] bg-clip-text text-xs font-bold text-transparent sm:text-base">
                             Covert Defense
                         </h3>
                         <h3 class="text-lg font-bold text-white sm:text-3xl sm:text-black">FortiVault VEIL</h3>
-                        <p class="text-sm text-slate-100 sm:text-base sm:text-slate-800">Invisible by design, Relentless in defense.</p>
+                        <p class="text-sm text-slate-100 sm:text-base sm:text-slate-800">Invisible by design. Relentless in defense.</p>
                         <Link
                             href="/veil-manual"
                             class="rounded-full border-2 border-white bg-none px-4 py-2 text-center text-xs font-semibold text-white transition-all duration-100 ease-in-out hover:border-blue-700 hover:bg-blue-700 hover:text-white sm:w-auto sm:border-[#2247FF] sm:px-8 sm:py-3 sm:text-[#2247FF] md:text-sm"
@@ -47,13 +47,13 @@
                 <div class="relative overflow-hidden">
                     <img src="/images/product-ultra.jpg" alt="FortiVault ULTRA" class="block h-auto w-full" />
                     <div
-                        class="absolute inset-0 flex flex-col items-center justify-center gap-2 bg-black/30 p-4 text-center transition duration-300 ease-in-out hover:bg-black/0 sm:justify-start sm:bg-black/10 sm:p-12"
+                        class="absolute inset-0 flex flex-col items-center justify-start gap-2 bg-black/10 p-4 text-center transition duration-300 ease-in-out hover:bg-black/0 sm:justify-start sm:bg-black/10 sm:p-12"
                     >
                         <h3 class="bg-gradient-to-r from-[#F87479] to-[#2546FF] bg-clip-text text-xs font-bold text-transparent sm:text-base">
                             Fortress Mode
                         </h3>
                         <h3 class="text-lg font-bold text-white sm:text-3xl sm:text-black">FortiVault ULTRA</h3>
-                        <p class="text-sm text-slate-100 sm:text-base sm:text-slate-800">Built for dominance, Engineered for trust.</p>
+                        <p class="text-sm text-slate-100 sm:text-base sm:text-slate-800">Built for dominance. Engineered for trust.</p>
                         <Link
                             href="/ultra"
                             class="rounded-full border-2 border-white bg-none px-4 py-2 text-center text-xs font-semibold text-white transition-all duration-100 ease-in-out hover:border-blue-700 hover:bg-blue-700 hover:text-white sm:w-auto sm:border-[#2247FF] sm:px-8 sm:py-3 sm:text-[#2247FF] md:text-sm"
@@ -66,7 +66,7 @@
                 <div class="relative overflow-hidden">
                     <img src="/images/product-drone.jpg" alt="FortiVault AERIS" class="block h-auto w-full" />
                     <div
-                        class="absolute inset-0 flex flex-col items-center justify-center gap-2 bg-black/30 p-4 text-center transition duration-300 ease-in-out hover:bg-black/0 sm:justify-start sm:bg-black/10 sm:p-12"
+                        class="absolute inset-0 flex flex-col items-center justify-start gap-2 bg-black/10 p-4 text-center transition duration-300 ease-in-out hover:bg-black/0 sm:justify-start sm:bg-black/10 sm:p-12"
                     >
                         <h3 class="bg-gradient-to-r from-[#F87479] to-[#2546FF] bg-clip-text text-xs font-bold text-transparent sm:text-base">
                             Autonomous Safeguard

@@ -6,7 +6,7 @@
                     <h2 class="text-2xl font-bold tracking-tight text-gray-900 md:text-4xl">Born Secure. Built Intelligent.</h2>
                     <p class="mt-6 text-lg font-bold text-gray-600">Security isn’t optional — it’s foundational.</p>
                     <p class="mt-2 text-lg text-gray-600">
-                        At PioVant, we fuse AI, cybersecurity, and precision engineering. Toronto-born. Globally designed.
+                        At PioVant, we fuse AI, cybersecurity, and precision engineering. <br />Toronto-born. Globally designed.
                     </p>
                     <p class="mt-2 text-lg font-bold text-gray-600">Our mission? Outsmart theft before it even begins.</p>
                     <p class="mt-4 text-lg font-medium text-gray-600">

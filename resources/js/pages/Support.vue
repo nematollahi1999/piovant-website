@@ -38,7 +38,7 @@
             <section ref="contactRef" class="fade-in-section bg-zinc-950 py-24 text-white sm:py-32">
                 <div class="container mx-auto max-w-6xl px-6">
                     <div class="mx-auto max-w-2xl text-center">
-                        <h2 class="text-2xl font-bold tracking-tight sm:text-3xl">Should your question fall outside the sections above!</h2>
+                        <h2 class="text-2xl font-bold tracking-tight sm:text-3xl">Should your question fall outside the sections above.</h2>
                         <p class="mt-4 text-lg leading-8 text-gray-300">
                             Our General Inquiry team stands ready to assist with discretion and clarity.
                         </p>

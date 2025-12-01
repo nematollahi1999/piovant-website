@@ -43,10 +43,10 @@ const handleToggle = (index) => {
 };
 
 const features = ref([
-    { title: 'Adaptive Intelligence.', content: 'Learns you, locks out intruders.' },
-    { title: 'Dual Authentication.', content: 'Face and fingerprint, seamless security.' },
-    { title: 'Global Command.', content: 'Issue orders from anywhere, instantly.' },
-    { title: 'Resilience by Design.', content: 'Weatherproof, shockproof, tamper-resistant.' },
-    { title: 'Future-Ready.', content: 'OTA upgrades, automated and invisible.' },
+    { title: 'Adaptive Intelligence', content: 'Learns you, locks out intruders.' },
+    { title: 'Dual Authentication', content: 'Face and fingerprint, seamless security.' },
+    { title: 'Global Command', content: 'Issue orders from anywhere, instantly.' },
+    { title: 'Resilience by Design', content: 'Weatherproof, shockproof, tamper-resistant.' },
+    { title: 'Future-Ready', content: 'OTA upgrades, automated and invisible.' },
 ]);
 </script>

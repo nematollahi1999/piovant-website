@@ -226,8 +226,8 @@
                             <p>
                                 Personal Data is retained only for as long as necessary to fulfill its original purpose, to comply with applicable
                                 legal or regulatory requirements, and to support warranty, safety, operational, or legitimate business needs. Flight
-                                telemetry is stored on-device for up to 12 months, with optional encrypted cloud backups retained solely for safety
-                                and compliance purposes.
+                                telemetry is stored on-device for up to 6 months, with optional encrypted cloud backups retained solely for safety and
+                                compliance purposes.
                             </p>
                         </div>
                     </div>
