@@ -18,8 +18,8 @@
                         <div class="prose prose-lg max-w-none text-gray-600">
                             <h2 class="py-2 text-3xl font-bold tracking-tight text-gray-900">Contact Information</h2>
                             <p>
-                                Our team is available to assist with inquiries from Monday to Friday, 9 AM to 5 PM EST. We strive to respond to all
-                                messages within one business day.
+                                Our team is available Monday through Friday, 9 AM to 5 PM EST, providing attentive support with the consistency you
+                                should expect. All inquiries recieve a prompt response within one business day.
                             </p>
                             <ul class="not-prose mt-8 space-y-6">
                                 <li class="flex items-start gap-4">
@@ -121,7 +121,7 @@
             <!-- Map Section -->
             <section ref="mapRef" class="fade-in-section bg-zinc-950 py-24 sm:py-32">
                 <div class="container mx-auto max-w-6xl px-6 text-center">
-                    <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">Our Global Headquarters</h2>
+                    <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">Our Headquarters</h2>
                     <p class="mt-4 text-lg text-gray-400">Located in the heart of Toronto's tech hub.</p>
                     <div class="mt-10 aspect-[16/9] w-full overflow-hidden rounded-xl bg-gray-800 shadow-2xl">
                         <!-- In a real app, you would embed a Google Map iframe here -->

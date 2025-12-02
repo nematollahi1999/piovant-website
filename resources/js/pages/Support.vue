@@ -5,7 +5,7 @@
             <section ref="heroRef" class="fade-in-section flex min-h-[70vh] flex-col items-center justify-center bg-zinc-950 px-6 text-center">
                 <h1 class="max-w-4xl text-5xl font-bold tracking-tight text-white md:text-7xl">PioVant Support Center</h1>
                 <p class="mt-6 max-w-3xl text-xl text-gray-300 md:text-2xl">
-                    Expert support at your fingertips. Find guides, troubleshoot issues, or connect with our dedicated team.
+                    Expert guidance, always within reach. Access guides, resolve issues or connect with our dedicated team effortlessly.
                 </p>
             </section>
 
@@ -38,16 +38,16 @@
             <section ref="contactRef" class="fade-in-section bg-zinc-950 py-24 text-white sm:py-32">
                 <div class="container mx-auto max-w-6xl px-6">
                     <div class="mx-auto max-w-2xl text-center">
-                        <h2 class="text-2xl font-bold tracking-tight sm:text-3xl">Should your question fall outside the sections above.</h2>
+                        <h2 class="text-2xl font-bold tracking-tight sm:text-3xl">Should your question fall outside the sections above,</h2>
                         <p class="mt-4 text-lg leading-8 text-gray-300">
-                            Our General Inquiry team stands ready to assist with discretion and clarity.
+                            Our General inquiry team remains prepared to assist with utmost clarity and discretion.
                         </p>
                     </div>
                     <div class="mx-auto mt-16 grid max-w-2xl gap-8 text-center lg:max-w-none">
                         <div class="rounded-xl bg-white/5 p-12 ring-1 ring-white/10">
                             <EnvelopeIcon class="mx-auto h-10 w-10 text-blue-400" />
                             <h3 class="mt-6 text-xl font-semibold">General Inquiry</h3>
-                            <p class="mt-2 text-gray-400">Get a detailed response from our technical team within 24 business hours.</p>
+                            <p class="mt-2 text-gray-400">Expect a detailed response from our experts within one business day.</p>
                             <a
                                 href="mailto:support@piovant.com"
                                 class="mt-6 inline-block rounded-full bg-gray-600 px-5 py-2 text-sm font-semibold text-white hover:bg-gray-500"
@@ -206,13 +206,13 @@ const supportCategories = ref([
     },
     {
         name: 'User Manuals',
-        description: 'In-depth documentation for all FortiVault products.',
+        description: 'In-depth documentation for all FortiVault packages.',
         icon: BookOpenIcon,
         targetEmail: 'docs@piovant.com',
     },
     {
         name: 'Shipping & Delivery',
-        description: 'Track orders and learn about shipping policies.',
+        description: 'Track orders and learn about shipping terms.',
         icon: TruckIcon,
         targetEmail: 'logistics@piovant.com',
     },
@@ -224,7 +224,7 @@ const supportCategories = ref([
     },
     {
         name: 'Warranty & Returns',
-        description: 'Understand our warranty policy and initiate a return.',
+        description: 'Review our warranty terms, then initiate a return.',
         icon: LifebuoyIcon,
         targetEmail: 'returns@piovant.com',
     },
