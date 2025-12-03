@@ -1,0 +1,26 @@
+<template>
+    <section class="bg-white py-8 text-center sm:py-24">
+        <div class="container mx-auto px-4">
+            <h2
+                class="relative mb-4 inline-block bg-gradient-to-r from-[#F87479] to-[#2546FF] bg-clip-text text-lg font-bold text-transparent md:text-4xl"
+            >
+                Where Awareness Takes Flight — and Motion Becomes Intelligence
+            </h2>
+
+            <p class="mx-auto max-w-7xl text-base font-bold text-gray-600 sm:text-xl">
+                AERIS™ is not a drone. Nor a hub. It is convergence — a living architecture where sky and ground think as one.
+            </p>
+            <p class="mx-auto mt-4 max-w-5xl text-base text-gray-600 sm:text-lg">
+                Born of precision, foresight, and grace, it perceives before danger takes form.<br />
+                Vigilance becomes art. Defense becomes instinct. AERIS™ doesn’t react — it preempts. Silently. Intelligently. Beautifully.
+            </p>
+            <div class="mt-8">
+                <button
+                    class="w-full cursor-pointer rounded-full border-2 border-[#2247FF] bg-none px-8 py-3 text-center text-xs font-semibold text-[#2247FF] backdrop-blur-sm transition-all duration-100 ease-in-out hover:border-blue-700 hover:bg-blue-700 hover:text-white sm:w-auto md:text-sm"
+                >
+                    Join the AERIS Waitlist
+                </button>
+            </div>
+        </div>
+    </section>
+</template>

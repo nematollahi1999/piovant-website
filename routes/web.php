@@ -32,6 +32,10 @@ Route::get('/veil-manual', function () {
     return Inertia::render('VeilManualPage');
 })->name('veil-manual');
 
+Route::get('/aeris', function () {
+    return Inertia::render('AerisPage');
+})->name('<aeris></aeris>');
+
 Route::get('/veil-auto', function () {
     return Inertia::render('VeilAutoPage');
 })->name('veil-auto');
